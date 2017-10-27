@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>hello world!</title>
+        <title>Hello World!</title>
     </head>
     <body>
-        <h1>hello world!</h1>
-        <p>1. what language do you speak?</p>
-        <p>2. what's your favorite country?</p>
-        <p>3. do you like italian food?</p>
-        
+        <h1>Hello World!</h1>
+        <p>What's your name?</p>
+        <p>What's your age?</p>
+
         <script>
-            alert( 'hello world!' );
-            let language = prompt( 'what language do you speak?' );
-            console.log( language );
+            alert( 'Hello world!' );
+            const username = prompt( 'What\'s your name?' );
+            console.log( 'user said their name was: ' + username );
+            alert( 'Hello ' + username );
 
-            let italian = confirm( 'do you like italian food?' );
-            console.log( italian );
+            // prompt( 'What\'s your age?' );
 
-            alert( 'you like italian food: ' + italian + ' and you speak ' + language );
+            const likesRain = confirm( 'Do you like the rain?' );
+            console.log( 'Question: likes rain? Answer: ' + likesRain );
+            alert( 'Thanks ' + username + '! I learned it\'s ' + likesRain + ' that you like the rain.' );
         </script>
     </body>
 </html>
