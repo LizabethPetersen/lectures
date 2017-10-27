@@ -94,11 +94,29 @@ new branch for your work on the next question!
 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
+    const sumOfAandB = sum(a, b);
+    const newSum = sum(sumOfAandB[0], c);
+    const productOfAandB = multiply(a, b);
+    const newProduct = multiply(productOfAandB[0], c);
+    console.log(sumOfAandB);
+    console.log(newSum);
+    console.log(productOfAandB);
+    console.log(newProduct);
 
+    return [
+        newSum[0],
+        newProduct[0],
+        a + ' and ' + b + ' and ' + c + ' sum to ' + newSum[0] + '.',
+        'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + newProduct[0] + '.',
+    ];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
+
+//    for (let i = 0; i < array.length; i += 1) {
+//       sum[i];
+//        multiply[i];
 
 
 /////////////////////////////////////
@@ -126,9 +144,9 @@ new branch for your work on the next question!
 
 // Write your code here
 
-function sumArray(testArray){ //eslint-disable-line
+//function sumArray(testArray){ //eslint-disable-line
 
-}
+//}
 
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -160,9 +178,8 @@ new branch for your work on the next question!
 */
 
 // Write your code here
-function multiplyArray(testArray){ //eslint-disable-line
-
-}
+//function multiplyArray(testArray){ //eslint-disable-line
+//}
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray();
