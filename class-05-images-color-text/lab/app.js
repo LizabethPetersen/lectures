@@ -179,8 +179,16 @@ new branch for your work on the next question!
 */
 
 // Write your code here
-//function multiplyArray(testArray){ //eslint-disable-line
-//}
+function multiplyArray(testArray){ //eslint-disable-line
+    const productNumbersA = multiply(testArray[0], testArray[1])[0];
+    const productNumbersB = multiply(productNumbersA, testArray[2])[0];
+    console.log(productNumbersB);
+    return [
+        productNumbersB,
+        'The numbers ' + testArray + ' have a product of ' + productNumbersB + '.',
+    ];
+
+}
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray();
+testMultiplyArray();
